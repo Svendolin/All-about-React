@@ -58,12 +58,10 @@ NODEMON - INSTALLATION:
 <br />
 
 ***
-<img align="left" alt="Angular" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" /> 
-
-<img align="left" alt="Typescript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" /> 
+<img align="left" alt="React" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /> 
 
 
-## &nbsp;Angular / Typescript - Useful Assistance ✅
+## &nbsp;React - Useful Assistance ✅
 ***
 ``Angular`` = Javascript Framework ("vorprogrammiertes Programmiergerüst / Rahmenstruktur")
 
@@ -71,38 +69,22 @@ NODEMON - INSTALLATION:
 
 <br />
 
-_**WHY SHALL I USE ANGULAR?**_
+_**WHY SHALL I USE REACT?**_
 
-- Provides components to effectively connect to the server or increase compatibility
-- Scripts are already available (safe time) and here to simplify the programming process
-- Other well-known Javascript frameworks are React and View
-- Provides a variety of libraries (code libraries) -> **Material Design** for graphical components
-- Built and used by Google = support is guaranteed
+- ...
 
 <br />
 
-_**WHY DO WE USE TYPESCRIPT?**_
-
-- This programming language is almost the same like Javascript, but it is an EXTENSION with some advantages
-- Everything which can be written in Javascript is also possible with Typescript
-- Old web browsers may not be able to read the constantly updated Javascript codes. Typescript remains at a rustic level, but at the same time we also write modernised Javascript
-
-<br />
 
 _**What's the difference between NULL and UNDEFINED?**_ (Table in GERMAN)
 
 | NULL | UNDEFINED | 
 |:--------------| :--------------|
-|Bedeutung: Zuweisungswert = KEIN WERT! (var = no value) | Bedeutung: Variable wurde DEKLARIERT, aber noch nicht DEFINIERT / ZUGEWIESEN|
-|In Javascript: Werte werden niemals auf null gesetzt | In Javascript: Als Standardwert festgelegt|
-|In JSON: Gültiger Wert | In JSON: Ungültiger Wert |
-|Element: Grundelement|Element: Grundelement|
-|Typ: Objekt (Fehlen dessen Wertes) |Typ: Undefined (Globale Variable)|
-|Prüfen: variable === null // true or false | Prüfen: variablenwert === undefined // true or false
+|TEST| TEST|
 
 <br />
 
-_**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
+_**Aufbau eines Projekts und FOLDERSTRUKTUR:**_
 
 * _node_modules_ = All additional external Libraries used for our Angular Project (Lots of default libraries)
 * _src_ = Source for all the code we're typing over there (more folders will be added through the work)
@@ -131,7 +113,41 @@ _**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
 
 <br />
 
-(**IMPORTANT: src is the most used folder here, in general you keep the others unattached**)
+_**What are COMPONENTS?**_
+
+- ...
+
+<br />
+
+_**What is JSX?**_
+
+- ...
+
+<br />
+
+_**How do we STYLE COMPONENTS? (with TailwindCSS for example)**_
+
+- ...
+
+<br />
+
+_**How do COMPONENTS COMMUNICATE?**_
+
+- ...
+
+<br />
+
+_**What are PROPS and STATES?**_
+
+- ...
+
+<br />
+
+_**What are REACT HOOKS?**_
+
+- ...
+
+<br />
 
 
 
