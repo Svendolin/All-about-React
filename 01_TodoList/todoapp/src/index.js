@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css'; Styling is going to be done via Tailwind CSS in our case
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 /* Up there we import the React library, the ReactDOM library, 
  the index.css file, the App component, and the reportWebVitals function. */
 
- // Down there we render the App component inside the root element of the DOM.
+ // <App /> APP COMONENT: Down there we render the App component inside the root element of the DOM.
+ // This is connected with App.js
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
