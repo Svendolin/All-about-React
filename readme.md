@@ -9,51 +9,109 @@
 # &nbsp;- ALL ABOUT REACT - ✔
 
 This "All about React"-repository catches up its focus on all the Projects and Excercises I've made with React through the coding years, which is a good way to keep track of my progress. I will also add some useful information about React and its usage.
-        
-* test [HERE](dfdf)
 
+_**What is REACT?**_
+
+React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.  Its aim is to allow developers to easily create fast user interfaces for websites and applications alike.
+        
 
 <br />
 <br />
 
 
 ***
-## Folder Directory
+## 0) Folder Directory
 ***
 
 | Topic | Content  | 
 |:--------------| :--------------|
-| 01_Test |  test |
+| 01_TodoList |  Created a simple todo list with react to learn how it works |
 
 
 <br />
 <br />
 
 ***
-## Technologies and Installation ✅
+## 1) Technologies and Installation ✅
 ***
 
 
 **Node.js - INSTALLATION:** *(Used for runtime environment for Javascript, script performs directly on the computer and not just on a web browser)*
 * https://nodejs.org/en/ (Recommend LTS = Long Term Support for an unbuggy / non-risky experience)
-* Open BASH or CMD or POWERSHELL to check with node --version if you installed it correctly
+* Open a command line on your computer like BASH or CMD or POWERSHELL to check with "node --version" if you installed it correctly
 * Node works via the command lines and is not executed via graphical components.
-* Together with NODE we also get the tool "Node Package Manager" = software can be installed via the command line!
-<br />
-
-**Angular - INSTALLATION:** *(Our CLI: Command Line Interface)*
-* https://angular.io/cli (npm install -g @angular/clie)
+* Together with NODE we also get the tool "Node Package Manager" = NPM. NPM is used to install additional libraries and frameworks. You can check the version with "npm --version"
 <br />
 
 **VSC and CHROME** *(Code Editor and Webbrowser)*
 * Chrome is recomended because of the close origin of Angular by Google
 <br />
 
+**VSC REACT EXTENSION** *(Some react snippets)*
+* Look for: ES7+ React/Redux/React-Native snippets in the extensions tab of Visual Studio Code
+
+**TAILWINDCSS with Create React App** *(Slightly deprecated)*
+* Direct Link: https://tailwindcss.com/docs/guides/create-react-app
+<br />
+
+**TAILWINDCSS with VITE** *(Slightly deprecated)*
+* Direct Link: https://tailwindcss.com/docs/guides/vite
+<br />
+<br />
+<br />
 
 
-NODEMON - INSTALLATION:
+
+
+<!-- NODEMON - INSTALLATION:
 * https://www.npmjs.com/package/nodemon 
 * (Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected).
+<br />
+<br /> -->
+
+***
+
+<img align="left" alt="create react app" width="35px" src="https://cdn.worldvectorlogo.com/logos/create-react-app.svg" />
+
+## &nbsp;TERMINAL COMMANDS with "CREATE REACT APP" (Slightly deprecated) to start a project ✅
+***
+
+| STEP | COMMAND | EFFECT  | 
+|:--------------| :--------------| :-------------
+|X| Open in integrated terminal | Opens the terminal in VSC |
+|X| $ node --version | Checks the node.js version (None if you havent installed it) |
+|X| $ npm --version | Checks the NPM Version (Node Package Manager) |
+|X| $ npx create-react-app todoapp --use-npm | Initializes your Project with a PRE-DEFINED WORKSPACE which I've called "todoapp" |
+|X| $ cd todoapp | Changes the directory to the "todoapp" folder to start |
+|X| $ npm start | Starts the React App |
+|X| ctrl + c | Stops the React App |
+
+<br />
+<br />
+
+***
+
+<img align="left" alt="vite" width="35px" src="https://vitejs.dev/logo-with-shadow.png" />
+
+## &nbsp;TERMINAL COMMANDS with "VITE" to start a project ✅
+***
+``VITE`` = Is a faster way to install the package to start a project. Vite uses a native ES module based build pipeline that is significantly faster than traditional bundlers like Webpack or Parcel. The browser refreshes as you edit files, which means you can develop without waiting for a build to finish.
+
+
+| STEP | COMMAND | EFFECT  | 
+|:--------------| :--------------| :-------------
+|1| Open in integrated terminal | Opens the terminal in VSC |
+|2| $ node --version | Checks the node.js version (None if you havent installed it) |
+|3| $ npm --version | Checks the NPM Version (Node Package Manager) |
+|4| $ npm install -g vite | Installs Vite |
+|5| $ npm create vite@latest | Asks for a project name. Choose a name and type in like for example "todoapp" > asks for a "selection of framework" > "react" > "Javascript" |
+|6| $ cd todoapp | Changes the directory to the "todoapp" folder to start |
+|7| $ npm install | Installs all the dependencies |
+|8| $ npm run dev | Starts the React App |
+|9| ctrl + Click on the localhost link | Given in the terminal, click on the link like "http:// localhost:5173/" to open a new window in the browser |
+|0| ctrl + c | Stops the React App |
+
+
 <br />
 <br />
 
@@ -61,67 +119,54 @@ NODEMON - INSTALLATION:
 <img align="left" alt="React" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /> 
 
 
-## &nbsp;React - Useful Assistance ✅
+## &nbsp;2) React - Useful Assistance after installation ✅
 ***
-``Angular`` = Javascript Framework ("vorprogrammiertes Programmiergerüst / Rahmenstruktur")
-
-``Typescript`` = Javascript Extension "Erweiterung" (Superset)
+``DOM`` = The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
 
 <br />
 
-_**WHY SHALL I USE REACT?**_
+_**FOLDERSTRUCTURE or a project with React:**_
 
-- ...
+* _node_modules_ = All additional external Libraries used for our React App which are installed and handeled via NPM. No need to touch this folder.
+* _public_ = All the files which are public and can be accessed by everyone
+  * _favicon.ico_ = Icon for our Webpage
+  * _index.html_ = FIRST OPENING FILE and binds the ``<body>``-part from index.js. Everything will be integrated in this id="root" div down below this script. No further changes needed.
+  * _manifest.json_ = Configuration for our Webapp (Name, Description, Icon, etc.)
+  * _robots.txt_ = Configuration for Search Engines (What should be indexed and what not)
+* _src_ = All the files which are private and can only be accessed by us (this is our workspace)
+  * _App.css_ = Styling for our App.js
+  * _App.js_ = Main Component which is called in index.js
+  * _App.test.js_ = Testfile for our App.js
+  * _index.css_ = Styling for our index.js
+  * _index.js_ = ROOT COMPONENT: First opening file which binds the ``<body>``-part from index.html. Everything will be integrated in this id="root" div down below this script. No further changes needed.
+  * _logo.svg_ = Logo for our Webpage
+  * _reportWebVitals.js_ = Performance measurement for our Webpage
+  * _setupTests.js_ = Testfile for our App.js
+
 
 <br />
-
-
-_**What's the difference between NULL and UNDEFINED?**_ (Table in GERMAN)
-
-| NULL | UNDEFINED | 
-|:--------------| :--------------|
-|TEST| TEST|
-
-<br />
-
-_**Aufbau eines Projekts und FOLDERSTRUKTUR:**_
-
-* _node_modules_ = All additional external Libraries used for our Angular Project (Lots of default libraries)
-* _src_ = Source for all the code we're typing over there (more folders will be added through the work)
-  * _app_ = Components for the page (With Import and Export we generate dependencies and add only the content we need)
-    * _app-routing.module.ts_ = All the URL of our page to call these later (Like /login or /register)
-    * _app.component.html_ = HTML Code
-    * _app.component.scss_ = SCSS Code
-    * _app.component.ts_ = TTypescript / Javascript Code
-    * _app.module.ts_ = Declared Components (out of our app-folder) and imported modules
-  * _assets_ = Safe images, videos and sounds
-  * _environment_ = Keep informations which may change: API keys, infos to our webapp like server URL changes
-  * _index.html_ = FIRST OPENING FILE and binds the ``<body>``-part from app.component.html
-  * _main.ts_ = Configurations (Imports the first module, the AppModule) - Dont have to be changed!
-  * _polyfills.ts_ = Compability - Dont have to be changed!
-  * _styles.scss_ = Basic styles for our application (INSERT CSS CODE HERE)
-  * _test.ts_ = Configurations for TESTING our application - Dont have to be changed!
-* _.browserlistrc_ = List of Webbrowser Output Support to show HTML, CSS and JS
-* _.editorcofig_ = Configuration of our Code Editor VSC
-* _.gitignore_ = All the data which shouldn't shown in .git
-* _angular.json_ = Angular Project Configuration
-* _karma.conf.js_ = Testrunner (To automatically test our Webapp)
-* _package-lock.json_ = Overview of installed Libraries and Versions
-* _package.json_ = Overview of the Package-libraries which have to be installed into node_modules
-* _README.md_ = Basic instructions to initialize a project
-* _tsconfig.json_ = Here to define which Javascript version we would like to convert our Typescript and typescript tests
-
+<hr>
 <br />
 
 _**What are COMPONENTS?**_
 
-- ...
+<img align="center" alt="Canvas Picture" src="https://dmitripavlutin.com/react-props/cover.png" /> <br>
+
+- React is a component based framework which means that we can create components and use them in other components. This is the way how we can create a modular and reusable code.
+
+- Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components. 
+
+- Functional components are basically just JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
 
 <br />
 
 _**What is JSX?**_
 
-- ...
+- Combines HTML and JavaScript to get a a functionable appluication.
+- Usually, React components are written in JavaScript. But, JSX is a syntax extension to JavaScript. It is a syntax that allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() and/or appendChild() methods. JSX is a preprocessor step that adds XML syntax to JavaScript. It is not necessary to use JSX, but it is recommended to use it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.
+
+- If you take a look at the components up there: app.js got such HTML content while App.css got the styling for it. Index.js imports the App.js and binds it to the id="root" div in index.html. This is the way how React works. 
+
 
 <br />
 
@@ -151,58 +196,68 @@ _**What are REACT HOOKS?**_
 
 
 
-***
-## &nbsp;TERMINAL COMMANDS I USED HERE (FOR PRE-DEFINED WORKSPACE) ✅
-***
 
-| COMMAND | EFFECT  | 
-|:--------------| :--------------|
-| $ node --version | Checks the node.js version (None if you havent installed it) |
-| $ npm --version | Checks the NPM Version (Node Package Manager) |
-|$ npm install -g @angular/cli|Command to Install Angular CLI (Command Line Interface)|
-|$ npm install -g typescript| Command to Install Typescript|
-|$ ng --version | Checks the NG Version (Angular Version) |
-|$ ng update | Shows which packages you could update to run the latest versions |
-|$ ng update @angular/cli | BUT: First: Uninstall > Then: $npm cache verify command > Then: $npm install -g @angular/cli --- Updates the CLI-packages |
-|$ ng update @angular/core | Updates the core-packages |
-|tsc script.ts|TSC = Typescriptcompilation = Compiles the Typescript File script.ts to Javascript in script.js (only JS is readable for a browser)|
-|(...move on...)| 1) Use Trick 17 to be in the right path = Right click of your desired file in your explorer > "OPEN IN INTEGRATED TERMINAL" > 2) Initialize Angular to the project with the NAME you want, for this example we use "my-first-project", the step next step will do this:|
-|$ ng new my-first-project| Initializes your Project with a PRE DEFINED WORKSPACE  |
-| (...move on...)| 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture) > 6) OPEN in integrated folder (in this example at "my-first-project")|
-|$ ng serve --open| Starts our project and opens at default port: localhost:4200 - The Content you see in your browser is from app component - ctrl + S to safe will activate auto load |
-|(...move on...)| Open a NEW TERMINAL in the same folder, so it can run independetly and now add some MORE COMPONENTS (which work like INCLUDES in PHP)|
-|$ ng g c header| Generates a new Angular component called "header" in the src > app-folder |
-| ctrl + c | Stop Localhost|
-
-
-<br />
-<br />
 
 ***
-## &nbsp;TERMINAL COMMANDS I USED HERE (FOR CUSTOM WORKSPACE) 🔧
+
+<img align="left" alt="Tailwindcss" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png" /> 
+
+## &nbsp;3) TERMINAL COMMANDS for the  project to move on if you want to use TAILWINDCSS  ✅
 ***
 
-* Test
+* Get the documentation [HERE](https://tailwindcss.com/docs/guides/vite)
 
-| COMMAND | EFFECT  | 
-|:--------------| :--------------|
-| $ ng new my-first-project --create-application false --style scss | Initializes your Project with a CUSTOM WORKSPACE |
+| STEP | COMMAND | EFFECT  | 
+|:--------------| :--------------| :--------------|
+|1| $ npm install -D tailwindcss postcss autoprefixer | Install Tailwind CSS |
+|2| $ npx tailwindcss init -p | Initialize Tailwind CSS with a post config file to configurate stuff |
+|3| Copy and replace the following code into the tailwind.config.js file: | Down below: |
 
-<br />
-<br />
-
-***
-## Coding tips and tricks ✅
-***
-
-_**CONST vs LET vs VAR:**_
 ```js
-/* ---- Notes ---- */
-
-<script>
-Test = "Hello World"; // Global Variable
-</script>
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 ```
+| STEP | COMMAND | EFFECT  | 
+|:--------------| :--------------| :--------------|
+|4| Copy and replace the following code into "src" > "index.css" | Down below: |
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+| STEP | COMMAND | EFFECT  | 
+|:--------------| :--------------| :-------------
+|5| Copy the h1-html code below into "src" > "App.jsx" | Down below: |
+
+```JS
+function App() {
+  const [count, setCount] = useState(0);
+
+ 
+  return (
+    <div className="App">
+    <!-- Over here we start using Tailwind’s utility classes to style our content -->
+      <h1 className="text-3xl font-bold underline bg-red-500">Hello world!</h1>
+      <!-- Copy-END -->
+    </div>
+  );
+}
+```
+
+| STEP | COMMAND | EFFECT  | 
+|:--------------| :--------------| :-------------
+|x| $ npm run start | Run the process with create react app OR: |
+|6| $ npm run dev | Run the process with VITE | 
 
 <br />
 <br />
@@ -223,4 +278,12 @@ Test = "Hello World"; // Global Variable
 
 | Questions | Anwers | Changes |
 |:--------------|:-------------:|--------------:|
-| 0 | 0 | 0 |
+| 1 | 1 | 1 |
+
+**_"How to fix Unknown at rule @tailwindcss (unknownAtRules) in VS Code?"_**
+
+1) Go to the settings of VS Code ("File" > "Preferences" > "Settings")
+2) Write "unkno" into the search bar for "unknownAtRules"
+3) Change "warning" to "ignore" and save the changes at "CSS > Lint: Unknown at rules"-section
+
+<hr>
