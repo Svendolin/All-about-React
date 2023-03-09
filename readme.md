@@ -101,6 +101,8 @@ rafce = React Arrow Function Component with Export
 ***
 ``VITE`` = Is a faster way to install the package to start a project. Vite uses a native ES module based build pipeline that is significantly faster than traditional bundlers like Webpack or Parcel. The browser refreshes as you edit files, which means you can develop without waiting for a build to finish.
 
+NOTE: Step 1 to 5 are only needed if you havent installed Vite before. If you have installed it before, you can skip to step 6.
+
 
 | STEP | COMMAND | EFFECT  | 
 |:--------------| :--------------| :-------------
@@ -172,7 +174,7 @@ _**What are COMPONENTS?**_
 
 _**What is JSX?**_
 
-- Combines HTML and JavaScript to get a a functionable appluication.
+- Combines HTML and JavaScript to get a a functionable application.
 - Usually, React components are written in JavaScript. But, JSX is a syntax extension to JavaScript. It is a syntax that allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() and/or appendChild() methods. JSX is a preprocessor step that adds XML syntax to JavaScript. It is not necessary to use JSX, but it is recommended to use it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.
 
 - If you take a look at the components up there: app.js got such HTML content while App.css got the styling for it. Index.js imports the App.js and binds it to the id="root" div in index.html. This is the way how React works. 
