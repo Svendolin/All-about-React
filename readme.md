@@ -43,10 +43,6 @@ React is a JavaScript library for building user interfaces. It is maintained by 
 * Together with NODE we also get the tool "Node Package Manager" = NPM. NPM is used to install additional libraries and frameworks. You can check the version with "npm --version"
 <br />
 
-**VSC and CHROME** *(Code Editor and Webbrowser)*
-* Chrome is recomended because of the close origin of Angular by Google
-<br />
-
 **VSC REACT EXTENSION** *(Some react snippets)*
 * Look for: ES7+ React/Redux/React-Native snippets in the extensions tab of Visual Studio Code
 
