@@ -1,6 +1,6 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+// import reactLogo from "./assets/react.svg"; NOT NEEDED ANYMORE FOR THIS PROJECT
+import "./App.css"; // Our Styling
 import TodoList from "./components/TodoList";
 
 function App() {
