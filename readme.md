@@ -50,11 +50,15 @@ React is a JavaScript library for building user interfaces. It is maintained by 
 **VSC REACT EXTENSION** *(Some react snippets)*
 * Look for: ES7+ React/Redux/React-Native snippets in the extensions tab of Visual Studio Code
 
+* With those extensions you can use the following shortcuts to create a react component for example:
+rafc = React Arrow Function Component
+rafce = React Arrow Function Component with Export
+
 **TAILWINDCSS with Create React App** *(Slightly deprecated)*
 * Direct Link: https://tailwindcss.com/docs/guides/create-react-app
 <br />
 
-**TAILWINDCSS with VITE** *(Slightly deprecated)*
+**TAILWINDCSS with VITE** *(Up to date!)*
 * Direct Link: https://tailwindcss.com/docs/guides/vite
 <br />
 <br />
@@ -123,6 +127,8 @@ React is a JavaScript library for building user interfaces. It is maintained by 
 ***
 ``DOM`` = The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
 
+=> VITE will overwrite some folderstructure names, so don't be confused if it looks different than the general structre as shown down below!
+
 <br />
 
 _**FOLDERSTRUCTURE or a project with React:**_
@@ -150,7 +156,11 @@ _**FOLDERSTRUCTURE or a project with React:**_
 
 _**What are COMPONENTS?**_
 
+- (I would personally recommend to create a folder called "components" in the "src" folder and add all your components in there. This way you can keep your code clean and structured).
+
 <img align="center" alt="Canvas Picture" src="https://dmitripavlutin.com/react-props/cover.png" /> <br>
+
+
 
 - React is a component based framework which means that we can create components and use them in other components. This is the way how we can create a modular and reusable code.
 
