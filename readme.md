@@ -25,7 +25,8 @@ React is a JavaScript library for building user interfaces. It is maintained by 
 
 | Topic | Content  | 
 |:--------------| :--------------|
-| 01_TodoList |  Created a simple todo list with react to learn how it works |
+| 00_Basics |  Basic React Testing with the combination of Tailwind CSS |
+| 01_TodoList |  Created a simple todo list with React and Tailwind CSS to learn how it works |
 
 
 <br />
@@ -213,7 +214,19 @@ _**What are REACT HOOKS?**_
 ## &nbsp;3) TERMINAL COMMANDS for the  project to move on if you want to use TAILWINDCSS  ✅
 ***
 
-* Get the documentation [HERE](https://tailwindcss.com/docs/guides/vite)
+* Get the documentation of installing [HERE](https://tailwindcss.com/docs/guides/vite)
+
+* Be sure to download the Tailwind CSS Extension for VS Code to get the IntelliSense for Tailwind CSS
+
+* **IMPORTANT NOTE:** If you're working with Tailwind CSS, the folder structure (as shown in Step 2 above) will be different:
+
+* _src_ = Especially SRC will be a bit different after you've done step 1 to 6:
+  * _App.css_ = Styling for our App.js (But not needed if you're working with utility classes)
+  * _App.jsx_ = Main Component
+  * _index.css_ = Where we now define utility base, components and utilities
+  * _main.jsx_ = Root rendering component
+  * _index.html_ = Where we import our main.jsx
+  * _tailwind.config.js_ = Where we configure Tailwind CSS
 
 | STEP | COMMAND | EFFECT  | 
 |:--------------| :--------------| :--------------|
