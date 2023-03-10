@@ -97,7 +97,7 @@ rafce = React Arrow Function Component with Export
 ***
 ``VITE`` = Is a faster way to install the package to start a project. Vite uses a native ES module based build pipeline that is significantly faster than traditional bundlers like Webpack or Parcel. The browser refreshes as you edit files, which means you can develop without waiting for a build to finish.
 
-NOTE: Step 1 to 5 are only needed if you havent installed Vite before. If you have installed it before, you can skip to step 6.
+**NOTE:** Step 1 to 4 are only needed if you havent installed Vite before. If you have installed it before and want to START A NEW PROJECT, you can skip to step 5! But first create a new MAIN FOLDER to integrate your project in like "01_React" or "02_TodoApp" and so on.
 
 
 | STEP | COMMAND | EFFECT  | 
