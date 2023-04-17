@@ -27,6 +27,7 @@ React is a JavaScript library for building user interfaces. It is maintained by 
 |:--------------| :--------------|
 | 00_Basics |  Basic React Testing with the combination of Tailwind CSS |
 | 01_TodoList |  Created a simple todo list with React and Tailwind CSS to learn how it works |
+| 02_AI_Powered3DWebsite | Build and deploy an AI-Powered 3D Website using REACT.js and THREE.js - UNDONE |
 
 
 <br />
